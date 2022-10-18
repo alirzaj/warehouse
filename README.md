@@ -61,6 +61,31 @@ At last, you need to run this command in order to create the tables in database.
 docker compose run --rm artisan migrate
 ```
 
+## Importing data
+This application provides two commands to import articles and products data.
+
+Before using these commands, make sure your data files (e.g. articles.json) are available in storage/app directory of the application.
+
+> **Note**
+> These commands must be executed in the docker directory.
+
+### *Articles*
+You can import articles via this command:
+
+``` bash
+docker compose run --rm artisan articles:import
+```
+
+![articles-import-command](https://user-images.githubusercontent.com/56073296/196364326-aae26dab-d241-4807-912c-300de0ad9deb.png)
+
+### *Products*
+You can import products via this command:
+
+``` bash
+docker compose run --rm artisan products:import
+```
+
+![products-import-command](https://user-images.githubusercontent.com/56073296/196364866-fb18c23e-d945-4548-936c-01b2de69e35b.png)
 
 ## Database schema
 Here is the schema of the application's database:
