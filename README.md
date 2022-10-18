@@ -109,3 +109,9 @@ docker compose run --rm artisan test
 In this application we have overridden the default query builder. you can read more about it in [this article](https://timacdonald.me/dedicated-eloquent-model-query-builders/).
 
 you may see a directory called Actions. This is a simple pattern to make our code more re-usable and to have better testability. Read more about it in [this article](https://freek.dev/1371-refactoring-to-actions). 
+
+## Issues
+
+In the [issue board](https://github.com/alirzaj/warehouse/issues) of this project, there are two labels:
+- [`investigate`](https://github.com/alirzaj/warehouse/issues?q=is%3Aissue+is%3Aopen+label%3Ainvestigate) is used for potential bugs.
+- [`idea`](https://github.com/alirzaj/warehouse/issues?q=is%3Aissue+is%3Aopen+label%3Aidea) is used to document future improvements that could be applied.
