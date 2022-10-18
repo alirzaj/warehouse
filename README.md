@@ -105,3 +105,7 @@ docker compose run --rm artisan test
 > In order to keep things simple, this application provides you with a warehouse_test database out of the box which is used in the testing environment variables.
 > If you want to run this application in an environment other than testing, then it's recommended to create a database and set its credentials in .env file.
 
+## Useful links
+In this application we have overridden the default query builder. you can read more about it in [this article](https://timacdonald.me/dedicated-eloquent-model-query-builders/).
+
+you may see a directory called Actions. This is a simple pattern to make our code more re-usable and to have better testability. Read more about it in [this article](https://freek.dev/1371-refactoring-to-actions). 
