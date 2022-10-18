@@ -1,5 +1,5 @@
 # warehouse
-This is a warehouse software which holds articles with products.
+This is a warehouse software which holds articles and products.
 
 Using this application you can see a list of products and quantities of each.
 
