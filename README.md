@@ -60,3 +60,9 @@ At last, you need to run this command in order to create the tables in database.
 ``` bash
 docker compose run --rm artisan migrate
 ```
+
+
+## Database schema
+Here is the schema of the application's database:
+
+![schema](https://user-images.githubusercontent.com/56073296/196355417-b8c347ec-064c-43f8-ab67-5f2ebfd70475.png)
