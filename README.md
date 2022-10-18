@@ -69,8 +69,14 @@ Here is the schema of the application's database:
 
 ## Run tests
 
-In order to rub tests, execute the following command: (this command must be executed in the docker directory)
+In order to run tests, execute the following command: (this command must be executed in the docker directory)
 
 ``` bash
 docker compose run --rm artisan test
 ```
+
+> **Note**
+> It's better to have a separated database for testing.
+> In order to keep things simple, this application provides you with a warehouse_test database out of the box which is used in the testing environment variables.
+> If you want to run this application in an environment other than testing, then it's recommended to create a database and set its credentials in .env file.
+
