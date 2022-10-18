@@ -33,13 +33,17 @@ cd docker
 
 Run this command to install all the dependencies using composer.
 
-
+``` bash
+docker compose run --rm composer install
+```
 
 ### *Step 4: Generate you application key*
 
 In order to run this application, a key must be provided. this command will generate the key and put it in your .env file.
 
-
+``` bash
+docker compose run --rm artisan key:generate
+```
 
 ### *Step 5: Run the necessary containers*
 
