@@ -11,13 +11,7 @@ class ProductController extends Controller
     {
         $products = Product::query()
             ->select('products.name', 'products.price')
-            ->selectRaw('FLOOR(
-                     MIN(articles.stock / article_product.amount)
-                ) AS available_count'
-            )
-            ->join('article_product', 'products.id', '=', 'article_product.product_id')
-            ->join('articles', 'article_product.article_id', '=', 'articles.id')
-            ->groupBy('products.id')
+            ->withAvailableCount()
             ->orderByRaw('available_count * products.price desc')
             ->get();
 
