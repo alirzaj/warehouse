@@ -9,8 +9,8 @@ services:
             - ./mysql:/bitnami/mysql/data
         environment:
             MYSQL_ROOT_PASSWORD: 123
-            MYSQL_DATABASE: warehouse
-            MYSQL_USER: warehouse
+            MYSQL_DATABASE: warehouse_test
+            MYSQL_USER: warehouse_test
             MYSQL_PASSWORD: 123
             MYSQL_AUTHENTICATION_PLUGIN: mysql_native_password
     app:
