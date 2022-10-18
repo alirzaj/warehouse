@@ -66,3 +66,11 @@ docker compose run --rm artisan migrate
 Here is the schema of the application's database:
 
 ![schema](https://user-images.githubusercontent.com/56073296/196355417-b8c347ec-064c-43f8-ab67-5f2ebfd70475.png)
+
+## Run tests
+
+In order to rub tests, execute the following command: (this command must be executed in the docker directory)
+
+``` bash
+docker compose run --rm artisan test
+```
